@@ -1,4 +1,5 @@
 import React, { Component, createContext } from "react";
+import sampleItems from './sampleItems';
 
 // Helper functions
 
@@ -24,7 +25,7 @@ export class GridProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [],
+      items: sampleItems,
       moveItem: this.moveItem,
       setItems: this.setItems
     };
